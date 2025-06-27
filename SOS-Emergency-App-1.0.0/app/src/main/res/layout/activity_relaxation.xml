@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF">
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Relaxation Exercise"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5" />
+
+    <!-- Timer -->
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="60s"
+        android:textSize="20sp"
+        android:textColor="#303F9F" />
+
+    <!-- Animated Breathing Circle -->
+    <View
+        android:id="@+id/breathing_circle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_shape" />
+
+    <!-- Breathing Instructions -->
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breathing_circle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Inhale"
+        android:textSize="22sp"
+        android:textColor="#3F51B5" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instruction_text"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:progressTint="#3F51B5"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+
+    <!-- Cycle Progress Text -->
+    <TextView
+        android:id="@+id/cycle_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Cycle: 0"
+        android:textSize="18sp"
+        android:textColor="#303F9F" />
+</RelativeLayout>
